@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="interest"></p>
+    <script>
+
+        alert("Welcome to this page");
+        let name = prompt("Please enter your name");
+        let likeSoccer = confirm("Do you like soccer?");
+        let result = "";
+        if(likeSoccer == true){
+            result = name + " like soccer.";
+        }else{
+            result = name + " doesn\'t like soccer.";
+        }
+        document.getElementById("interest").innerHTML = result;
+        console.log(result);
+    </script>
+
+</body>
+</html>
